@@ -1,0 +1,13 @@
+.layout-side{
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    border: 2px solid red;
+}
+
+.layout-sidebox{
+    width: 30%;
+    height: 100%;
+    border: 2px solid black;
+    padding: 1%;
+}

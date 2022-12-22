@@ -1,0 +1,59 @@
+.layout-container{
+    width: 70%;
+    border: 2px solid rgb(4, 33, 4);
+    
+}
+
+#nav-item{
+    padding: 1%;
+    background: green;
+    /* border: 2px solid black; */
+}
+
+#nav-item h3{
+    color: #fff;
+    margin: auto;
+}
+
+.cal-area{
+    border: 2px solid yellow;
+}
+.cal-items{
+    border: 2px dotted pink;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.cal-area span{
+    width: 10%;
+    height: 20%;
+    background: yellow;
+    /* display: inline-block; */
+    margin: 0% 5%;
+    /* padding: 10%; */
+}
+
+.score-area{
+    background: #000;
+    color: #fff;
+    display: flex;
+}
+
+.score-area h4{
+    margin-top: 2%;
+    margin-right: 1%;
+}
+
+.score{
+    /* margin: 2%; */
+    border: 2px solid #fff;
+    padding: 18px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.score p{
+    width: 1.5vw;
+    font-size: 20px;
+
+}

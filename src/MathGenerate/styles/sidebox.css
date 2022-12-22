@@ -1,0 +1,22 @@
+.layout-side{
+    display: flex;
+}
+.sidebox-item button{
+        display: block;
+        width: 80%;
+        margin: 24% auto;
+        padding: 4%;
+        box-shadow: 1px 1px 5px 5px rgb(82, 84, 69);
+        border: none;
+}
+
+.sidebox-item button a{
+    text-decoration: none;
+    color: rgb(78, 63, 63);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.layout-container{
+    padding: 1%;
+}
