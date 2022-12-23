@@ -1,22 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import Context from '../../Context/context';
 import '../styles/sidebox.css';
 const Sidebox = () => {
+  const {easy , medium , hard , advance} = useContext(Context);
+
   return (
    
       <div className="sidebox">
 
         <div className='sidebox-item'>
-          <button>
-            <a href="#">Easy</a>
+          <button onClick={easy}> 
+            <a href="/">Easy</a>
           </button>
-          <button>
-            <a href="#">Medium</a>
+          <button onClick={medium}>
+            <a href="/">Medium</a>
           </button>
-          <button>
-            <a href="#">Hard</a>
+          <button onClick={hard}>
+            <a href="/">Hard</a>
           </button>
-          <button>
-            <a href="#">Advance</a>
+          <button onClick={advance}>
+            <a href="/">Advance</a>
           </button>
         </div>
       </div>
