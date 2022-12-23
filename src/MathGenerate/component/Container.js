@@ -3,13 +3,17 @@ import Context from "../../Context/context";
 import "../styles/container.css";
 
 const Container = () => {
-  const { value1, value2, setInput, input , onStart , add} = useContext(Context);
+  const { value1, value2, setInput, input , onStart , add , marks} = useContext(Context);
 
   
   let result = value1 + value2;
-  add(result);
   
-  
+  const Display = ()=>{
+    setTimeout(()=>{
+      add(result);
+
+    },2000)
+  }
 
   return (
     <div className="container">
@@ -29,7 +33,8 @@ const Container = () => {
             <input
               className="user-input"
               value={input}
-              
+              autoFocus
+              onKeyUp={Display}
               placeholder="Enter Yours Answer"
               onChange={(e) => setInput(e.target.value)}
               />
@@ -41,7 +46,7 @@ const Container = () => {
       <div className="score-area">
         <h4>Your Score : </h4>
         <div className="score">
-          <p>4</p>
+          <p>{marks}</p>
         </div>
       </div>
     </div>
